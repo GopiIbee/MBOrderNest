@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "298098388316",
+    "firebase_url": "https://order-nest-ibee.firebaseio.com",
+    "project_id": "order-nest-ibee",
+    "storage_bucket": "order-nest-ibee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298098388316:android:0f8687c16c856e5d59e599",
+        "android_client_info": {
+          "package_name": "com.ibee.mbordernest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298098388316-0alnlhak5pnf4iosh27s153m3hd36viv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibee.mbordernest",
+            "certificate_hash": "bc2ccf971c9cb5310026618a1fadba213d9a4ac1"
+          }
+        },
+        {
+          "client_id": "298098388316-3lpgbbfic04n95qe7d7veir79a2vhrbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMEoH4_ZTJCmq4GCcAx_856yfAPPXONUU"
+        },
+        {
+          "current_key": "AIzaSyCaN2IRLWIByU2WZASoGC21eiLs95wRgoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298098388316-3lpgbbfic04n95qe7d7veir79a2vhrbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298098388316:android:8af3f460d4d485a759e599",
+        "android_client_info": {
+          "package_name": "com.ibee.ordernest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298098388316-6rvqsrbbj2fko3sh9nj10gmi7bhhfv24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibee.ordernest",
+            "certificate_hash": "de8892258a0443403508abe95ef5b106939cc694"
+          }
+        },
+        {
+          "client_id": "298098388316-m7475c2q49s8097vopimdrs82k0iklbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ibee.ordernest",
+            "certificate_hash": "79228492d4ffb2382d4d0679f24b8d7ebb7237c5"
+          }
+        },
+        {
+          "client_id": "298098388316-3lpgbbfic04n95qe7d7veir79a2vhrbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMEoH4_ZTJCmq4GCcAx_856yfAPPXONUU"
+        },
+        {
+          "current_key": "AIzaSyCaN2IRLWIByU2WZASoGC21eiLs95wRgoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298098388316-3lpgbbfic04n95qe7d7veir79a2vhrbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

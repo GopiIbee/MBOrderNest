@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activitys.WalletRechargeActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+
+                android:text="Recharge Customer Wallet"
+                android:textColor="@color/icon_color_blue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_star"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Customer Name"
+                    android:textColor="@color/icon_color_blue"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/icon_star"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+
+                    android:text="Customer Mobile"
+                    android:textColor="@color/icon_color_blue"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape_erewars"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Enter Customer Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+
+                <EditText
+                    android:id="@+id/customer_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape_erewars"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Enter Customer Mobile"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lldropdoen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Select amount"
+                    android:textColor="@color/icon_color_blue"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Select Payment Methods"
+                    android:textColor="@color/icon_color_blue"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_hide_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/recharge_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rectangle_shape_erewars"
+                        android:orientation="vertical"
+
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_recharge_mode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/recharge_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="left"
+                        android:inputType="number"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:text=""
+                        android:textColor="@color/icon_color_blue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/payment_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape_erewars"
+                    android:orientation="vertical"
+
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <Spinner
+                        android:id="@+id/spinner_payment_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_trans_ref_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginRight="50dp"
+                android:drawableLeft="@drawable/icon_star"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="top"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+
+                android:text="Transaction Ref No"
+                android:textColor="@color/icon_color_blue"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/trans_ref_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle_shape_erewars"
+
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="top"
+                android:hint="Enter Transaction Ref No"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_commnet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="top"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Comment"
+                android:textColor="@color/icon_color_blue"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/commnet"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rectangle_shape_erewars"
+                android:fontFamily="@font/opensans_regular"
+
+                android:gravity="top"
+                android:hint="Enter Comment"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/send_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+
+                android:background="@color/icon_color_blue"
+                android:elevation="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Send Otp"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

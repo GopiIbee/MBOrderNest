@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MB Order Nest</string>
+    <string name="some_error">Looks like there is some problem with your internet connection! Please try again</string>
+
+        <string-array name="spinnerItems">
+            <item>Select</item>
+            <item>Cancel</item>
+            <item>NC</item>
+            <item>Split Item</item>
+            <item>Move Item</item>
+            <item>Delete Order</item>
+        </string-array>
+   <!-- <item>Sub Table</item>
+-->
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="600dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="CHOOSE ADD-ONS"
+        android:fontFamily="@font/opensans_regular"
+
+        android:background="@color/icon_color_blue"
+        android:textColor="@color/colorWhite"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="10dp"
+        android:id="@+id/my_recycler_dailog"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_actvts_submit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/opensans_regular"
+
+            android:layout_centerInParent="true"
+            android:background="@color/icon_color_blue"
+            android:gravity="center"
+            android:text="Proceed"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</LinearLayout>

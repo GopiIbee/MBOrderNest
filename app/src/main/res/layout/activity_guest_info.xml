@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.GuestInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/icon_color_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:fontFamily="@font/opensans_regular"
+
+            android:text="Guest Info "
+            android:textColor="@color/colorWhite"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.7"
+                android:enabled="false"
+                android:fontFamily="@font/opensans_regular"
+
+                android:gravity="center"
+                android:inputType="number"
+                android:text="+91"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhiteGray" />
+
+            <requestFocus />
+
+            <EditText
+                android:id="@+id/mobile_number"
+
+
+                android:fontFamily="@font/opensans_regular"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight=".3"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhiteGray" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/guest_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_regular"
+
+            android:layout_margin="5dp"
+            android:hint="Guest Name"
+            android:inputType="text"
+            android:maxLength="30"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteGray" />
+
+        <EditText
+            android:id="@+id/no_per"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/opensans_regular"
+
+            android:visibility="visible"
+
+            android:hint="Cover"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteGray" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:hint="Email Id"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhiteGray"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+
+                android:background="@color/colorWhite"
+                android:text="Back"
+                android:textColor="@color/icon_color_blue" />
+
+            <Button
+                android:id="@+id/skip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+
+                android:background="@color/colorWhite"
+                android:text="Skip"
+                android:textColor="@color/icon_color_blue" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+
+                android:background="@color/colorWhite"
+                android:text="Save"
+                android:textColor="@color/icon_color_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

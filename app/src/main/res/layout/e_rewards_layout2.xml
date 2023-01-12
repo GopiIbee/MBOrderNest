@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/icon_color_blue3"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Apply coupon"
+                android:fontFamily="@font/opensans_regular"
+
+                android:textColor="@color/icon_color_blue"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="match_parent"
+                android:background="@drawable/rectangle_shape_erewars_blue_round"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_error2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/error_message2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="-5dp"
+                        android:drawableRight="@drawable/icons8_error_30"
+                        android:drawablePadding="10dp"
+                        android:gravity="right|center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/red_color"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_enter_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:fontFamily="@font/opensans_regular"
+
+                        android:padding="10dp"
+                        android:text="Enter Coupon   "
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/code_points"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:background="@drawable/rectangle_shape_erewars"
+                        android:padding="10dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/redeem_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/opensans_regular"
+
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/gradiant"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Apply Now"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="-2dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/StoreCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="-2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_store"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+
+                    android:padding="10dp"
+                    android:text="Store Coupon"
+                    android:textColor="@color/icon_color_blue"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/ewardcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layer_store2"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:fontFamily="@font/opensans_regular"
+
+                    android:text="eWards Coupon"
+                    android:textColor="@color/colorWhite"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

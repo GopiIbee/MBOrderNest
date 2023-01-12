@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#3f5063" />
+
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+    <padding
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp" />
+    <gradient
+
+        android:centerColor="@color/icon_color_blue2"
+        android:endColor="@color/icon_color_blue2"
+        android:startColor="@color/icon_color_blue2">
+
+    </gradient>
+
+</shape>

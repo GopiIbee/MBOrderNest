@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icon_color_blue"
+    tools:context=".activitys.HomeScreenActivity">
+
+    <LinearLayout
+        android:id="@+id/llhome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/table_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/icon_color_blue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/table_cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:padding="15dp"
+
+                    android:text="Categories"
+
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <!--<ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.7"
+                    android:src="@drawable/icon_logout" />-->
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/my_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/logout"
+                android:layout_below="@+id/table_ll1"
+
+                android:background="@color/gray_color"
+                android:scrollbars="none" />
+
+
+            <LinearLayout
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@color/icon_color_blue"
+
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableRight="@drawable/icon_logout"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Logout"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25dp" />
+            </LinearLayout>
+            <!--<Button
+                android:layout_alignParentBottom="true"
+                android:id="@+id/kotslist"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:text="Kots List"
+                android:background="@color/icon_color_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/store_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@+id/ll_logout_list"
+
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ll_logout_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/recharege"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/colorWhite"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_account_balance_wallet_24"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/store_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/colorWhite"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_change_circle_24" />
+
+                    <ImageView
+                        android:id="@+id/ll_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/colorWhite"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_logout_24" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="@color/gray_color"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_zones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/bar_counter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/icon_color_blue"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Bar Counter"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <Button
+
+                            android:id="@+id/ladies_lounge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Ladies Lounge"
+                            android:textColor="@color/icon_color_blue"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/dance_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Dance Section"
+                            android:textColor="@color/icon_color_blue"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/smoking_zone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="Smoking Zone"
+                            android:textColor="@color/icon_color_blue"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/vip_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="VIP Area"
+                            android:textColor="@color/icon_color_blue"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/view_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/black"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/my_recycler2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:scrollbars="none" />
+                </LinearLayout>
+
+                <!--
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:background="@color/colorWhite"
+                                    android:orientation="vertical">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/my_recycler3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="10dp"
+                                        android:scrollbars="none" />
+                                </LinearLayout>
+                -->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
